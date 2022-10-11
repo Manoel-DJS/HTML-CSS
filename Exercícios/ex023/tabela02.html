@@ -9,6 +9,13 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        caption{
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         table{
             width: 500px;
             border-collapse: collapse;
@@ -20,7 +27,7 @@
         }
 
         thead, tfoot{
-            background-color: gray;
+            background-color: #242424;
             color: white;
         }
         td.num{
@@ -34,6 +41,7 @@
     <!--
         Anatomia Para Tabelas Grandes
         Table
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -43,10 +51,11 @@
         -->
 
     <table>
+        <caption> Lista de unidades federativas do Brasil por população </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -85,7 +94,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Total de Habitantes</td>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
