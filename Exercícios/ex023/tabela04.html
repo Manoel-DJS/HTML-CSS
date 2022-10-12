@@ -14,7 +14,11 @@
             border-collapse: collapse;  
             text-align: center;  
         }
-
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+        }
         td, th{
             border: 1px solid black;
             padding: 10px;
@@ -42,54 +46,55 @@
     <h2>teste</h2>
 
     <table>
-        <tr> <!-- Linha 1-->
-            <th>Grupo</th>
-            <th>Nomes</th>
-            <th colspan="3">Filmes</th>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr> <!-- Linha 1-->
+                <th>Grupo</th>
+                <th>Nomes</th>
+                <th colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <body>
+            <tr> <!-- Linha 2-->
+                <th rowspan="3">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr> <!-- Linha 3-->
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr> <!-- Linha 4-->
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr> <!-- Linha 5-->
+                <th rowspan="3">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr> <!-- Linha 6-->
+                <td>Daniel Lourenço</td>
+                <td>Wall-e</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr> <!-- Linha 7-->
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Store</td>
+            </tr>
+        </body>
 
-        </tr>
-        <tr> <!-- Linha 2-->
-            <th rowspan="3">Mulheres</th>
-            <td>A</td>
-            <td>A</td>
-            <td>A</td>
-            <td>A</td>
-        </tr>
-        <tr> <!-- Linha 3-->
-            <td>A</td>
-            <td>A</td>
-            <td>A</td>
-            <td>A</td>
-
-        </tr>
-        <tr> <!-- Linha 4-->
-            <td>A</td>
-            <td>A</td>
-            <td>A</td>
-            <td>A</td>
-
-        </tr>
-        <tr> <!-- Linha 5-->
-            <th rowspan="3">Homens</th>
-            <td>A</td>
-            <td>A</td>
-            <td>A</td>
-            <td>A</td>
-        </tr>
-        <tr> <!-- Linha 6-->
-            <td>A</td>
-            <td>A</td>
-            <td>A</td>
-            <td>A</td>
-
-        </tr>
-        <tr> <!-- Linha 7-->
-            <td>A</td>
-            <td>A</td>
-            <td>A</td>
-            <td>A</td>
-
-        </tr>
     </table>
 </body>
 </html>
