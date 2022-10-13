@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 450px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th{
+            background-color: gray;
+            color: white;
+        }
+        .rmedia{
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+        }
+        
+    </style>
+    <title>Tabela</title>
+</head>
+<body>
+    <h1 style="margin-left: 50px;">Planilha de Notas</h1>
+    <table>
+
+        <thead>
+            <tr> <!-- Linha 1-->
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr> <!-- Linha 2-->
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+    
+            </tr>
+        </thead>    
+
+        <tbody>
+            <tr> <!-- Linha 3-->
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td>7.0</td>
+                <td>7.0</td>
+                <td>7.0</td>
+            </tr>
+            <tr> <!-- Linha 4-->
+                <td>Física</td>
+                <td>8.0</td>
+                <td>8.0</td>
+                <td>8.0</td>
+            </tr>
+            <tr> <!-- Linha 5-->
+                <td>Química</td>
+                <td>7.0</td>
+                <td>7.0</td>
+                <td>7.0</td>
+            </tr>
+            <tr> <!-- Linha 6-->
+                <td>Biologia</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr> <!-- Linha 7-->
+                <th colspan="4" scope="row">Média de Exatas</th>
+                <td class="rmedia">8.0</td>
+            </tr>
+            <tr> <!-- Linha 8-->
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td>9.0</td>
+                <td>9.0</td>
+                <td>9.0</td>
+            </tr>
+            <tr> <!-- Linha 9-->
+                <td>Geografia</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr> <!-- Linha 10-->
+                <th colspan="4" scope="row">Média de Humanas</th>
+                <td class="rmedia">9.5</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>
