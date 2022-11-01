@@ -15,7 +15,7 @@
     
     <h1>Meu Primeiro Formulário</h1>
 
-    <form action="cadrasto.php" autocomplete="off">
+    <form action="cadrasto.php" method="get" autocomplete="off">
         <p> 
             <label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome">
@@ -25,7 +25,7 @@
             <label for="isobrenome">Sobrenome: </label> 
             <input type="text" name="sobrenome" id="isobrenome">
         </p>
-        
+
         <p><input type="submit" value="Enviar"></p>
     </form>
 
@@ -34,7 +34,15 @@
         Name é mais útil para html e php
         id é mais útil para javascript 
         name é o nome do objeto e id seria o identificador dele
+    -->
+    <!-- 
+        Método get e post
+        get = para dados não sensíveis, a exemplo: nome, peso, busca no google etc
+        link e url compatilhável
 
+        post =  para dados sensíveis, a exemplo: senhas, cartão de crédito, CPF etc
+        mais de 3 mil bites
+        envio de fotos
     -->
 </body>
 </html>
